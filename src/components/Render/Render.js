@@ -2,8 +2,9 @@ import * as THREE from 'three';
 import {MTLLoader} from 'three/examples/jsm/loaders/MTLLoader';
 import {OBJLoader} from 'three/examples/jsm/loaders/OBJLoader';
 import * as facemesh from '@tensorflow-models/facemesh';
-import * as tf from '@tensorflow/tfjs-core';
-
+// import * as tf from '@tensorflow/tfjs-core';
+import * as tf from '@tensorflow/tfjs'
+import '@tensorflow/tfjs-backend-wasm';
 
 var model;
 var glassesObj;
